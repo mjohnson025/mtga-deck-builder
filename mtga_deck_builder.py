@@ -67,11 +67,21 @@ def build_deck(card_pool, owned_cards, selected_keywords, selected_colors, selec
 # === Fetch Meta Decks (Basic Example from MTGMeta.io) ===
 def fetch_meta_decks():
     try:
-        response = requests.get("https://mtgmeta.io/api/topdecks")
-        if response.status_code == 200:
-            data = response.json()
-            decks = [deck["deck"] for deck in data.get("data", [])]
-            return decks[:5]  # return top 5 decks
+        url = "https://mtgmeta.io/api/topdecks"
+        response = requests.get(url, timeout=10)
+
+        if response.status_code != 200:
+            raise ValueError(f"Failed to fetch meta decks: HTTP {response.status_code}")
+
+        if not response.content.strip():
+            raise ValueError("Received empty response from meta deck source.")
+
+        data = response.json()
+        decks = [deck.get("deck", "Unknown Deck") for deck in data.get("data", [])]
+        return decks[:5]
+
+    except Exception as e:
+        messagebox.showwarning("Meta Deck Error", f"Unable to fetch meta decks:\n{str(e)}")
         return []
     except Exception as e:
         messagebox.showerror("Meta Deck Error", str(e))
@@ -220,4 +230,3 @@ chart_frame = ttk.Frame(root, padding=10)
 chart_frame.grid(row=1, column=0, sticky="nsew")
 
 root.mainloop()
-

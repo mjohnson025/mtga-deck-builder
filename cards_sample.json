@@ -1,1 +1,23 @@
-
+[
+    {"name": "Shock", "type": "Instant", "color": "Red", "keywords": ["burn", "damage"], "cmc": 1, "format": "Standard,Historic"},
+    {"name": "Lightning Strike", "type": "Instant", "color": "Red", "keywords": ["burn", "damage"], "cmc": 2, "format": "Standard,Historic"},
+    {"name": "Ghitu Lavarunner", "type": "Creature", "color": "Red", "keywords": ["haste", "burn"], "cmc": 1, "format": "Historic"},
+    {"name": "Fanatical Firebrand", "type": "Creature", "color": "Red", "keywords": ["haste"], "cmc": 1, "format": "Historic"},
+    {"name": "Llanowar Elves", "type": "Creature", "color": "Green", "keywords": ["ramp"], "cmc": 1, "format": "Historic"},
+    {"name": "Elvish Mystic", "type": "Creature", "color": "Green", "keywords": ["ramp"], "cmc": 1, "format": "Historic"},
+    {"name": "Wildgrowth Walker", "type": "Creature", "color": "Green", "keywords": ["lifegain"], "cmc": 2, "format": "Standard"},
+    {"name": "Ajani's Pridemate", "type": "Creature", "color": "White", "keywords": ["lifegain"], "cmc": 2, "format": "Standard"},
+    {"name": "Blood Artist", "type": "Creature", "color": "Black", "keywords": ["sacrifice"], "cmc": 2, "format": "Historic"},
+    {"name": "Zulaport Cutthroat", "type": "Creature", "color": "Black", "keywords": ["sacrifice"], "cmc": 2, "format": "Historic"},
+    {"name": "Brushfire Elemental", "type": "Creature", "color": "Red", "keywords": ["landfall"], "cmc": 2, "format": "Standard"},
+    {"name": "Akoum Hellhound", "type": "Creature", "color": "Red", "keywords": ["landfall"], "cmc": 1, "format": "Standard"},
+    {"name": "Forest", "type": "Land", "color": "Green", "keywords": [], "cmc": 0, "format": "Standard,Historic"},
+    {"name": "Mountain", "type": "Land", "color": "Red", "keywords": [], "cmc": 0, "format": "Standard,Historic"},
+    {"name": "Swamp", "type": "Land", "color": "Black", "keywords": [], "cmc": 0, "format": "Standard,Historic"},
+    {"name": "Plains", "type": "Land", "color": "White", "keywords": [], "cmc": 0, "format": "Standard,Historic"},
+    {"name": "Island", "type": "Land", "color": "Blue", "keywords": [], "cmc": 0, "format": "Standard,Historic"},
+    {"name": "Soul Warden", "type": "Creature", "color": "White", "keywords": ["lifegain"], "cmc": 1, "format": "Historic"},
+    {"name": "Risen Reef", "type": "Creature", "color": "Blue", "keywords": ["landfall"], "cmc": 3, "format": "Historic"},
+    {"name": "Gray Merchant of Asphodel", "type": "Creature", "color": "Black", "keywords": ["lifegain"], "cmc": 5, "format": "Historic"}
+  ]
+  
